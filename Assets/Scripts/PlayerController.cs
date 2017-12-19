@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	private float forceMultiplier = 1f;
 	[SerializeField]
 	private float jumpMultiplier = 30f;
+
 	[SerializeField]
 	private float leftX;
 	[SerializeField]
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour {
 
 		_animator.SetInteger("velocity",
 			(int)(Mathf.Abs(_rigidBody.velocity.x*1000)));
+
 
 		//flip
 		if (_rigidBody.velocity.x > 0) {
